@@ -1,13 +1,11 @@
 html body{
   padding: 0;
   margin: 0;
-  overflow:hidden;
-  margin: 0;
   background: #20262E;
-  height: 1000px;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Amatic SC', cursive;
 }
+
 
 .cursor {
   position: fixed;
@@ -31,7 +29,6 @@ background-color: transparent;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 .parallax-wrap {
   position: relative;
@@ -41,19 +38,31 @@ background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-.parallax-wrap h2 {
+
+#containerParallax h2 {
   position: relative;
-  font-size: 100px;
+  font-size: 150px;
   color: white;
-  z-index: 2;
+  z-index: 4;
   text-align: center;
 }
+
+#containerParallax h3 {
+  position: relative;
+  font-size: 50px;
+  color: white;
+  z-index: 4;
+  text-align: center;
+}
+
 .parallax-wrap span {
   position: absolute;
   height: 20px;
   width: 20px;
 }
+
 .parallax-wrap span:nth-child(1) {
   top: 70%;
   left: 70%;
@@ -64,6 +73,7 @@ background-color: transparent;
   background-size: contain;
   z-index: 3;
 }
+
 .parallax-wrap span:nth-child(2) {
   top: 60%;
   left: 80%;
@@ -95,12 +105,57 @@ background-color: transparent;
   background-size: contain;
 }
 .parallax-wrap span:nth-child(5) {
-  top: 40%;
-  left: 30%;
+  top: 30%;
+  left: 20%;
   background-image: url("/img/ekod.svg");
   width: 250px;
   height: 250px;
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 3;
+}
+
+.parallax-wrap span:nth-child(6) {
+  top: 30%;
+  left: 80%;
+  background-image: url("/img/tableTennis.svg");
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 3;
+}
+
+.parallax-wrap span:nth-child(7) {
+  top: 70%;
+  left: 10%;
+  background-image: url("/img/desktop.svg");
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 3;
+}
+
+.parallax-wrap span:nth-child(8) {
+  top: 70%;
+  left: 10%;
+  background-image: url("/img/music.svg");
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 3;
+}
+
+#scroll{
+  width: 30px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.parallax-wrap p{
+  text-align: center;
+  font-size: 40px;
+  margin-left: 20px;
 }
